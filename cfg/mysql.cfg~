@@ -1,0 +1,42 @@
+# configurações do banco de dados
+[mysql]
+host                = localhost
+database            = banco
+user                = user
+password            = ******
+mysql_destino       = /home/user/python_codes/dev_backptor_mysql/mysql_testedebackup/mysql_backup/
+
+[config]
+# diretório de saída
+origem		        = /home/user/python_codes/dev_backptor_mysql/mysql_testedebackup/mysql_backup
+# diretório de destino
+destino             = /home/user/python_codes/dev_backptor_mysql/mysql_testedebackup/
+# nome que vem antes da data atual inclusa no final do nome do arquivo
+pre_nome            = sqlfilename_
+#lista com o nome dos bancos a serem formatos
+bancos              = teste1,teste2
+
+# configurações do log
+[loggers]
+keys                = root
+
+[handlers]
+keys                = defaultHandler
+
+[formatters]
+keys                = defaultFormatter
+args                = ('%d-%m-%Y %H:%M:%S')
+
+[logger_root]
+level               = INFO
+handlers            = defaultHandler
+qualname            = root
+
+[handler_defaultHandler]
+class               = FileHandler
+formatter           = defaultFormatter
+args                = ('/home/user/python_codes/dev_backptor_mysql/log/mysql_backptor.log', 'a')
+
+[formatter_defaultFormatter]
+format              = %(asctime)s;%(name)s;%(levelname)s;%(message)s
+datefmt             = %d-%m-%Y %H:%M:%S
