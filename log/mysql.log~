@@ -1,0 +1,7 @@
+21-01-2016 19:09:37;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
+21-01-2016 19:32:02;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
+22-01-2016 08:50:10;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
+22-01-2016 08:52:11;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
+22-01-2016 08:56:28;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
+22-01-2016 08:58:40;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
+22-01-2016 08:58:40;root;ERROR;backup_banco: erro: [Errno 2] No such file or directory: 'mysqldump '
